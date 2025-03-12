@@ -13,6 +13,6 @@ include("includes/header.php");
         <p>8GB RAM, 20 Slots, 4 vCores – 9,99€ / Monat</p>
         <button onclick="purchasePackage('advanced')">Paket bestellen</button>
     </div>
-    <!-- Weitere Pakete hier -->
+    <!-- Weitere Pakete hinzufügen -->
 </div>
 <?php include("includes/footer.php"); ?>
