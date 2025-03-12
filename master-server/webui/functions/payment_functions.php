@@ -1,12 +1,8 @@
 <?php
-// Zahlungsabwicklung und Rechnungsstellung
 function processPayment($userId, $package, $amount) {
     global $pdo;
     $stmt = $pdo->prepare("INSERT INTO payments (user_id, package, amount, payment_date) VALUES (?, ?, ?, NOW())");
-    if ($stmt->execute([$userId, $package, $amount])) {
-        return true;
-    }
-    return false;
+    return $stmt->execute([$userId, $package, $amount]);
 }
 
 function generateInvoice($paymentId) {
@@ -16,3 +12,4 @@ function generateInvoice($paymentId) {
     return $invoiceFile;
 }
 ?>
+
