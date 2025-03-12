@@ -1,5 +1,4 @@
 <?php
-// Funktionen für die Benutzerverwaltung
 function registerUser($username, $email, $password) {
     global $pdo;
     $hashed = password_hash($password, PASSWORD_DEFAULT);
