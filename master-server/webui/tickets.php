@@ -10,5 +10,6 @@ include("includes/header.php");
         <textarea name="message" required></textarea>
         <button type="submit">Ticket absenden</button>
     </form>
+    <!-- Hier werden bestehende Tickets angezeigt -->
 </div>
 <?php include("includes/footer.php"); ?>
