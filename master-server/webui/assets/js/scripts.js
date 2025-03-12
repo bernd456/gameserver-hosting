@@ -1,4 +1,3 @@
-// Basis-JavaScript für Interaktivität
 document.addEventListener("DOMContentLoaded", function() {
     console.log("WebUI geladen");
 });
