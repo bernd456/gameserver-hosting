@@ -33,7 +33,7 @@ mysql -u root -p$MYSQL_ROOT_PASSWORD -e "FLUSH PRIVILEGES;"
 # WebUI klonen und installieren
 WEB_DIR="/var/www/html"
 rm -rf $WEB_DIR/*
-git clone https://github.com/DeinGitHubAccount/gameserver-hosting.git /tmp/gs_temp
+git clone https://github.com/bernd456/gameserver-hosting.git /tmp/gs_temp
 cp -r /tmp/gs_temp/master-server/webui/* $WEB_DIR/
 chown -R www-data:www-data $WEB_DIR
 chmod -R 755 $WEB_DIR
