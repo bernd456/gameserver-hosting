@@ -15,3 +15,4 @@ try {
     die("Datenbankverbindung fehlgeschlagen: " . $e->getMessage());
 }
 ?>
+
